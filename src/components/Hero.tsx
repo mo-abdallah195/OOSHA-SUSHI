@@ -106,10 +106,14 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenPdf }) => {
                 {/* Hero Dish Image */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#1E212D]">
                   <img
-                    src="/src/assets/images/hero_sushi_spread_1793305382770.jpg"
+                    src="/images/hero_sushi_spread.jpg"
                     alt="Oosha Sushi Fresh Table Feast"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      target.src = '/assets/images/hero_sushi_spread_1793305382770.jpg';
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#14161E] via-transparent to-black/30 pointer-events-none" />
 
@@ -128,6 +132,10 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenPdf }) => {
                       alt="Oosha Sushi Mascot Logo"
                       className="w-full h-full object-cover rounded-full"
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        target.src = '/assets/aistudio/WhatsApp_Image_2026-10-29_at_11.20.50_PM_04da67ed.jpeg';
+                      }}
                     />
                   </div>
                   <div className="space-y-1">

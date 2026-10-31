@@ -24,8 +24,10 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, onOpenPdf }) => {
               className="w-full h-full object-cover rounded-full"
               referrerPolicy="no-referrer"
               onError={(e) => {
-                // fallback if needed
-                (e.currentTarget as HTMLElement).style.display = 'none';
+                const target = e.currentTarget as HTMLImageElement;
+                if (!target.src.includes('WhatsApp_Image')) {
+                  target.src = '/assets/aistudio/WhatsApp_Image_2026-10-29_at_11.20.50_PM_04da67ed.jpeg';
+                }
               }}
             />
           </div>

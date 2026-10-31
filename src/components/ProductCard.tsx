@@ -30,12 +30,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ item, lang, onQuickVie
   // Determine fallback image or category illustration
   const displayImage = item.image || (
     item.category === 'signature'
-      ? '/src/assets/images/sushi_signature_volcano_1793305384106.jpg'
+      ? '/images/sushi_signature_volcano.jpg'
       : item.category === 'crispy'
-      ? '/src/assets/images/sushi_crispy_fried_1793305384057.jpg'
+      ? '/images/sushi_crispy_fried.jpg'
       : item.category === 'classic'
-      ? '/src/assets/images/sushi_classic_salmon_1793305384610.jpg'
-      : '/src/assets/images/hero_sushi_spread_1793305382770.jpg'
+      ? '/images/sushi_classic_salmon.jpg'
+      : '/images/hero_sushi_spread.jpg'
   );
 
   return (
@@ -49,6 +49,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ item, lang, onQuickVie
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             referrerPolicy="no-referrer"
             loading="lazy"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement;
+              if (!target.src.endsWith('/images/hero_sushi_spread.jpg')) {
+                target.src = '/images/hero_sushi_spread.jpg';
+              }
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#13151D] via-transparent to-black/20" />
 

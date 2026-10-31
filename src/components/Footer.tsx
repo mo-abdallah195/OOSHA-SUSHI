@@ -20,6 +20,12 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenPdf }) => {
                 alt="Oosha Sushi"
                 className="w-full h-full object-cover rounded-full"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget as HTMLImageElement;
+                  if (!target.src.includes('WhatsApp_Image')) {
+                    target.src = '/assets/aistudio/WhatsApp_Image_2026-10-29_at_11.20.50_PM_04da67ed.jpeg';
+                  }
+                }}
               />
             </div>
             <div>

@@ -29,8 +29,8 @@ export const RESTAURANT_INFO = {
   whatsappNumber: "201098528128",
   location: "Shebin El-Kom, Monufia",
   locationAr: "شبين الكوم، المنوفية",
-  logoUrl: "/assets/aistudio/WhatsApp_Image_2026-10-29_at_11.20.50_PM_04da67ed.jpeg",
-  pdfMenuUrl: "/assets/aistudio/OOSHA_SUSHI_-_Official_Final_Menu__1__24ed290f.pdf",
+  logoUrl: "/images/logo.jpeg",
+  pdfMenuUrl: "/menu.pdf",
   workingHoursEn: "Daily: 1:00 PM – 1:00 AM",
   workingHoursAr: "يومياً من ١:٠٠ ظهراً حتى ١:٠٠ صباحاً",
 };
@@ -57,7 +57,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionEn: 'Crispy shrimp tempura & fresh cucumber topped with spicy crab salad, crispy panko & teriyaki drizzle.',
     descriptionAr: 'جمبري تمبورا مقرمش وخيار طازج، مغطى بسلطة كابوريا حارة، بانكو مقرمش ولمسة صوص ترياكي.',
     tags: ['Best Seller', 'Spicy', 'Crispy Panko'],
-    image: '/src/assets/images/sushi_signature_volcano_1793305384106.jpg',
+    image: '/images/sushi_signature_volcano.jpg',
   },
   {
     id: 'cheese-bomb',
@@ -70,7 +70,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionEn: 'Crispy chicken tempura & cucumber, topped with flame-torched melted mozzarella blend & dynamite sauce.',
     descriptionAr: 'ستربس دجاج تمبورا مقرمش وخيار، مغطى بمزيج موتزاريلا ذائبة ومحمرة باللهب وصوص ديناميت غني.',
     tags: ['Flame-Torched', 'Chicken Tempura', 'Melted Mozzarella'],
-    image: '/src/assets/images/sushi_crispy_fried_1793305384057.jpg',
+    image: '/images/sushi_crispy_fried.jpg',
   },
   {
     id: 'black-pearl',
@@ -132,7 +132,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionEn: 'Tempura shrimp, crab stick, teriyaki sauce with crispy Panko topping.',
     descriptionAr: 'جمبري تمبورا مقلي، أصابع كابوريا، صوص ترياكي كلاسيك مع كرانش بانكو المقرمش الذهبي.',
     tags: ['Crispy Panko', 'Shrimp Tempura', 'Best Seller'],
-    image: '/src/assets/images/sushi_crispy_fried_1793305384057.jpg',
+    image: '/images/sushi_crispy_fried.jpg',
   },
   {
     id: 'fried-volcano',
@@ -201,7 +201,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionEn: 'Fresh raw salmon, cream cheese & crisp cucumber ribbons.',
     descriptionAr: 'سالمون طازج نيء عالي الجودة، جبنة كريمية غنية وشرائح خيار مقرمشة.',
     tags: ['Raw Salmon', 'Cream Cheese', 'Classic Favorite'],
-    image: '/src/assets/images/sushi_classic_salmon_1793305384610.jpg',
+    image: '/images/sushi_classic_salmon.jpg',
   },
   {
     id: 'classic-california',
@@ -297,7 +297,7 @@ export const MENU_ITEMS: MenuItem[] = [
       '٤x كريسبي تمبورا',
     ],
     tags: ['16 Pcs', 'Solo Feast', 'Save Big'],
-    image: '/src/assets/images/hero_sushi_spread_1793305382770.jpg',
+    image: '/images/hero_sushi_spread.jpg',
   },
   {
     id: 'duo-combo',
@@ -319,7 +319,7 @@ export const MENU_ITEMS: MenuItem[] = [
     ],
     tags: ['32 Pcs', 'For 2 People', 'Customizable'],
     isCustomizable: true,
-    image: '/src/assets/images/hero_sushi_spread_1793305382770.jpg',
+    image: '/images/hero_sushi_spread.jpg',
   },
   {
     id: 'family-box',
@@ -342,7 +342,7 @@ export const MENU_ITEMS: MenuItem[] = [
       'مرفق مع الوازابي والزنجبيل ومجموعة صوصات',
     ],
     tags: ['50 Pcs', 'Family & Parties', 'Ultimate Value'],
-    image: '/src/assets/images/hero_sushi_spread_1793305382770.jpg',
+    image: '/images/hero_sushi_spread.jpg',
   },
 
   // 6. EXTRA SAUCES & SIDES
